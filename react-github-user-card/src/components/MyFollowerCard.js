@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
+import "../index.css"
 
 const MyFollowerCard = props => {
   console.log(props);
@@ -15,11 +16,18 @@ const MyFollowerCard = props => {
   } = props.follower;
   return (
     <div>
-      <Card>
-        <Image src={avatar_url} wrapped ui={false} />
+      <Card className="myFollowerCard">
+        
+          <Image
+            className="myFollowerCard-image"
+            src={avatar_url}
+            wrapped
+            ui={false}
+          />
+        
         <Card.Content>
           <Card.Header>
-            <h2>{name}</h2>
+            <h3>{name}</h3>
           </Card.Header>
 
           <Card.Description>
@@ -28,18 +36,12 @@ const MyFollowerCard = props => {
             <span>Location:{location || "none"} </span> <br />
             <span>
               Profile: <a href={html_url}>{`${html_url}`}</a>
-            </span>{" "}
+            </span>
             <br />
             <span>Followers: {followers}</span> <br />
             <span>Following: {following}</span> <br />
             <span>Bio: {bio || "none"}</span> <br />
           </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <a>
-            <Icon name="user" />
-            {followers} Followers
-          </a>
         </Card.Content>
       </Card>
     </div>

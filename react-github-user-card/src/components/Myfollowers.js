@@ -7,10 +7,12 @@ const MyFollowers = (props) => {
   
     return (
       <div>
+        <section className="followers-list ">
         {props.myFollowers.map((follower) => {
-         return <MyFollowerCard  follower={follower} />;
-        })}
+          return <MyFollowerCard follower={follower} />;
         
+        })}
+        </section>
       </div>
     );
 }

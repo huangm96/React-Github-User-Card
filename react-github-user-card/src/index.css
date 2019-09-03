@@ -1,0 +1,49 @@
+.followers-list{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.myFollowerCard{
+    width: 500px;
+    height:900px;
+    border:2px solid blue;
+    padding: 10px 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.myFollowerCard-image img{
+    width: 400px;
+    height:450px;
+    margin: 0 auto;
+}
+h1{
+    font-size:6rem;
+    text-align: center;
+}
+h2{
+    margin:10px auto 10px 20px;
+    font-size: 3rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+
+.myCard{
+    width: 500px;
+    height:900px;
+    border:2px solid blue;
+    padding: 10px 5px;
+    margin: 20px auto;
+    text-align: center;
+}
+.myCard-image img{
+    width: 400px;
+    height:450px;
+    margin: 0 auto;
+}
+span{
+    font-size:1.5rem;
+    text-align: left;
+}

@@ -55,6 +55,7 @@ class App extends React.Component {
       <div className="App">
         <h1>React Github User Card</h1>
         <MyGithubcard myGithubInfo={this.state.myGithubInfo} />
+        <h2>Min's Followers:</h2>
         <Myfollowers myFollowers={this.state.myFollowers} />
       </div>
     );
